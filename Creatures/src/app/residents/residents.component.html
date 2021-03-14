@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel="stylesheet"> 
+<link rel="shortcut icon" type="image/png" href="assets/images/favicon.png" />
+<meta name="description" content="Demo of Bootstrap 4 user profile card widget to show different styles of user card created with default card and other components.">
+<title>Bootstrap 4 User Profile Card » WebNots</title> 
+<!-- CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+p.Bebas {
+    font-family: 'Bebas Neue';font-size: 100px;
+}    
+.bodybg-color {
+    background-color: #ccc;
+}
+.btn{border-radius: 0;}
+.btn-md {
+border-width: 0;
+outline: none;
+border-radius: 0;
+box-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
+cursor: pointer;
+}    
+.btn-primary {
+    color: var(--button-color);
+    background-color: var(--button-background-color);
+    border-radius: var(--border-radius);
+  }
+  
+  .btn-primary:hover {
+    box-shadow: inset 0 0 0 20rem var(--darken-1);
+  }
+  
+  .btn-primary:active {
+    box-shadow: inset 0 0 0 20rem var(--darken-2),
+      inset 0 3px 4px 0 var(--darken-3),
+      0 0 1px var(--darken-2);
+  }
+  
+  .btn-primary:disabled,
+  .btn-primary.is-disabled {
+    opacity: .5;
+  }
+  
+  .btn-success {
+    color: var(--button-color);
+    background-color: var(--button-pruple-color);
+    border-radius: var(--border-radius);
+  }
+  
+  .btn-success:hover {
+    box-shadow: inset 0 0 0 20rem var(--darken-1);
+    background-color:purple;
+    border-color:purple;
+  }
+  
+  .btn-success:active {
+    box-shadow: inset 0 0 0 20rem var(--darken-2),
+      inset 0 3px 4px 0 var(--darken-3),
+      0 0 1px var(--darken-2);
+  }
+  
+  .btn-success:disabled,
+  .btn-success.is-disabled {
+    opacity: .5;
+  }
+
+  .btn-warning {
+    color: var(--button-color);
+    background-color: var(--button-background-color);
+    border-radius: var(--border-radius);
+  }
+  
+  .btn-warning:hover {
+    box-shadow: inset 0 0 0 20rem var(--darken-1);
+  }
+  
+  .btn-warning:active {
+    box-shadow: inset 0 0 0 20rem var(--darken-2),
+      inset 0 3px 4px 0 var(--darken-3),
+      0 0 1px var(--darken-2);
+  }
+  
+  .btn-warning:disabled,
+  .btn-warning.is-disabled {
+    opacity: .5;
+  }
+    h3 {text-align: center;margin:40px;}
+</style>
+<body>
+<h3 class="headalign"><p class = "Bebas">Residents</p></h3>
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-12">
+     <div class="card card-inverse" style="background-color: #333; border-color: #333;">
+            <div class="card-block">
+			  <div class="row">
+            				<div class="col-md-8 col-sm-8">
+					<h2 class="card-title">Adam A</h2>
+					<p class="card-text"><strong>Role: </strong> Resident DJ </p>
+                    <p class="card-text"><strong></strong> 
+                        Adam A fell in love with dance music after growing up idealising rock gods.
+                        DJing became a way for him to explore that passion deeper and share it with others.
+                        His sets are always fun and energetic, mixing strains of house to get you moving.                      
+                        Behind the controls, he tries not to take things too seriously. Party music with a smile.
+                        Welcome to the crew, Adam. Exciting things to come. </p>
+					<p><strong>Platforms: </strong>
+						<span class="badge bg-primary">Facebook</span> 
+						<span class="badge bg-info">DJ</span>
+						<span class="badge bg-warning">Soundcloud</span>
+						
+					</p>
+				</div>
+			  <div class="col-md-4 col-sm-4 text-center">
+					<img src="assets/Adam_A.png" alt="" width="{{225}}" height="{{225}}" style="border-radius:50%;">
+				</div>         
+				<div class="col-md-4 col-sm-4 text-center">
+					
+					<button class="btn btn-primary btn-block btn-md "><span class="fa fa-facebook-square"></span> Like  </button>
+				</div>
+				<div class="col-md-4 col-sm-4 text-center">
+                    
+					<button class="btn btn-success btn-block btn-md"><span class="fa fa-instagram"></span> Insta </button>
+                </div>
+                
+				<div class="col-md-4 col-sm-4 text-center">
+					
+					<button type="button" class="btn btn-warning btn-block btn-md" ><span class="fa fa-soundcloud"></span> Follow </button>  
+				</div>
+			  </div>
+              </div>
+          </div>
+  </div>
+  </div> 
+</div>
+<hr class="my-5"> 
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-12">
+     <div class="card card-inverse" style="background-color: #333; border-color: #333;">
+            <div class="card-block">
+			  <div class="row">
+			  <div class="col-md-4 col-sm-4 text-center">
+                    <img src="assets/Bella_Claxton.png" alt="" width="{{225}}" height="{{225}}" class="btn-md"  style="border-radius:50%;">
+				</div>
+				<div class="col-md-8 col-sm-8">
+					<h2 class="card-title">Bella Claxton</h2>
+					<p class="card-text"><strong>Role: </strong> Resident DJ </p>
+					<p class="card-text"><strong></strong> Founder of In House Radio -
+                        Bella compiles a diverse range of tracks imto her set with one common trait: they all make you want to drop everything and party. 
+                        Her sets explore the boundaries of Euro trance, house, electro, italo, Breakbeat and techno, combining the sounds into a zestful concoction.  </p>
+					<p><strong>Platform: </strong>
+						<span class="badge bg-primary">Facebook</span> 
+						<span class="badge bg-info">DJ</span>
+						<span class="badge bg-warning">Soundcloud</span>
+						<span class="badge bg-success">Radio</span>
+					</p>
+                </div>         
+                <div><p>
+
+                </p></div>
+				<div class="col-md-4 col-sm-4 text-center">
+					
+					<button class="btn btn-primary btn-block btn-md"><span class="fa fa-facebook-square"></span> Like  </button>
+				</div>
+				<div class="col-md-4 col-sm-4 text-center">
+					
+					<button class="btn btn-success btn-block btn-md"><span class="fa fa-instagram"></span> Insta </button>
+				</div>
+				<div class="col-md-4 col-sm-4 text-center">
+					
+					<button type="button" class="btn btn-warning btn-block btn-md"><span class="fa fa-soundcloud"></span> Follow </button>  
+				</div>
+			  </div>
+              </div>
+          </div>
+    </div>
+  </div> 
+</div>
+<hr class="my-5">
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-12">
+     <div class="card card-inverse" style="background-color: #333; border-color: #333;">
+            <div class="card-block">
+			  <div class="row">
+            				<div class="col-md-8 col-sm-8">
+					<h2 class="card-title">Some Sheila</h2>
+					<p class="card-text"><strong>Role: </strong> Resident DJ </p>
+                    <p class="card-text"><strong> </strong> 
+                        Grab your tequila, prepare for a squealer, we're introducing Some Sheila. 
+                        She's more than the sheila that DJ’d some house party on the weekend, more than the DJ that has just one sound and more than a one spin wonder. She's the sheila you wait for, the sheila that doesn't roll her eyes at a song request and the sheila that understands her crowd. She's Some Sheila. 
+                        Despite the name, Some Sheila isn’t just any sheila. Some Sheila has taken the stage across Europe, including rooftops in London and beach clubs and in Santorini, as well as dominating her stomping ground across Melbourne. 
+                        Some Sheila is a Resident DJ for Creatures Events and has supported other well-known Melbourne collectives, such as Pounce Events, The Daily Commute and President Press.
+                        Her music is not limited to a specific genre. Instead her tastes lie with beats that keep you moving, lyrics you can’t get out of your head and songs that bring an element of surprise to the dance floor. 
+                        Why Some Sheila? Because she's loud, she's proud and wins over the god damn crowd. </p>
+					<p><strong>Platforms: </strong>
+						<span class="badge bg-primary">Facebook</span> 
+						<span class="badge bg-info">DJ</span>
+						<span class="badge bg-warning">Soundcloud</span>
+						
+					</p>
+				</div>
+			  <div class="col-md-4 col-sm-4 text-center">
+					<img src="assets/Leesh.png" alt="" width="{{225}}" height="{{225}}" style="border-radius:50%;">
+				</div>         
+				<div class="col-md-4 col-sm-4 text-center">
+					
+					<button class="btn btn-primary btn-block btn-md"><span class="fa fa-facebook-square"></span> Like  </button>
+				</div>
+				<div class="col-md-4 col-sm-4 text-center">
+					
+					<button class="btn btn-success btn-block btn-md"><span class="fa fa-instagram"></span> Insta </button>
+				</div>
+				<div class="col-md-4 col-sm-4 text-center">
+					
+					<button type="button" class="btn btn-warning btn-block btn-md"><span class="fa fa-soundcloud"></span> Follow </button>  
+				</div>
+			  </div>
+              </div>
+          </div>
+  </div>
+  </div> 
+</div>
+<hr class="my-5"> 
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-12">
+     <div class="card card-inverse" style="background-color: #333; border-color: #333;">
+            <div class="card-block">
+			  <div class="row">
+			  <div class="col-md-4 col-sm-4 text-center">
+                    <img src="assets/gman_dj.png" alt="" width="{{225}}" height="{{225}}" class="btn-md"  style="border-radius:50%;">
+				</div>
+				<div class="col-md-8 col-sm-8">
+					<h2 class="card-title">G Man</h2>
+					<p class="card-text"><strong>Role: </strong> Resident DJ </p>
+                    <p class="card-text"><strong></strong> G Man is  Melbourne based, born and raised DJ and producer. 
+                        A founding member of Creatures, G Man has been honing his DJing style clubs around Melbourne since 2014. 
+                        With a focus on Tech house and UK bass house, G Man loves to inject colour into the stereotypical club scene. 
+                        You can expect the dance floor to be hit with left of centre bangers which you will find impossible to not groove to. 
+                        G Man is also an up and coming producer in the Aussie trap scene. 
+                        Having recently released his debut EP, we are keen for G Man to bring his taste and supreme knowledge to techno and house.  </p>
+					<p><strong>Platform: </strong>
+						<span class="badge bg-primary">Facebook</span> 
+						<span class="badge bg-info">DJ</span>
+						<span class="badge bg-warning">Soundcloud</span>
+						<span class="badge bg-success">Producer</span>
+					</p>
+                </div>         
+                <div><p>
+
+                </p></div>
+				<div class="col-md-4 col-sm-4 text-center">
+					
+					<button class="btn btn-primary btn-block btn-md" onclick = "window.open('https://www.facebook.com/ggmanbeats')"><span class="fa fa-facebook-square"></span> Like  </button>
+				</div>
+				<div class="col-md-4 col-sm-4 text-center">
+					
+                    <button class="btn btn-success btn-block btn-md" onclick = "window.open('https://www.instagram.com/g_man.wav')" ><span class="fa fa-instagram"></span> Insta </button>
+                    
+				</div>
+				<div class="col-md-4 col-sm-4 text-center">
+					
+					<button type="button"  onclick = "window.open('https://soundcloud.com/gmanmelb')" class="btn btn-warning btn-block btn-md" ><span class="fa fa-soundcloud"></span> Follow </button>  
+				</div>
+			  </div>
+              </div>
+          </div>
+    </div>
+  </div> 
+</div>
+<hr class="my-5">      
+<!-- End Content -->              
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>
